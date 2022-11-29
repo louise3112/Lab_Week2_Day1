@@ -14,6 +14,13 @@ class Team:
                 return True
         return False
 
+    #Alternative approaches:
+    # def has_player(self, player_name):
+    #     return self.players.count(player_name) > 0
+
+    # def has_player(self, player_name):
+    #     return player_name in self.players
+
     def play_game(self, game_result):
-        if game_result == True:
+        if game_result == True: #This could also be written as 'if game_result:' since game_result is boolean
             self.points += 3
